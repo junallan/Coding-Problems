@@ -1,0 +1,34 @@
+Configuring terminal-size-0.3.2.1...
+Preprocessing library for terminal-size-0.3.2.1..
+Building library for terminal-size-0.3.2.1..
+[1 of 3] Compiling System.Console.Terminal.Common ( src\System\Console\Terminal\Common.hs, .stack-work\dist\5c8418a7\build\System\Console\Terminal\Common.o )
+[2 of 3] Compiling System.Console.Terminal.Windows ( src\System\Console\Terminal\Windows.hs, .stack-work\dist\5c8418a7\build\System\Console\Terminal\Windows.o )
+
+[;1msrc\System\Console\Terminal\Windows.hs:26:24: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Woverflowed-literals[0m[0m[;1m][0m[0m[;1m
+    Literal -11 is out of the Word32 range 0..4294967295[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m26 |[0m[0m c_STD_OUTPUT_HANDLE = -[;1m[35m11[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m                        ^^[0m[0m
+[0m[0m[0m
+[;1msrc\System\Console\Terminal\Windows.hs:28:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunsupported-calling-conventions[0m[0m[;1m][0m[0m[;1m
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "windows.h GetConsoleScreenBufferInfo" c_GetConsoleScreenBufferInfo
+          :: HANDLE -> Ptr CONSOLE_SCREEN_BUFFER_INFO -> IO Bool[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m28 |[0m[0m [;1m[35mforeign import stdcall unsafe "windows.h GetConsoleScreenBufferInfo"[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m
+[;1msrc\System\Console\Terminal\Windows.hs:31:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunsupported-calling-conventions[0m[0m[;1m][0m[0m[;1m
+    * the 'stdcall' calling convention is unsupported on this platform,
+      treating as ccall
+    * When checking declaration:
+        foreign import stdcall unsafe "windows.h GetStdHandle" c_GetStdHandle
+          :: Word32 -> IO HANDLE[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m31 |[0m[0m [;1m[35mforeign import stdcall unsafe "windows.h GetStdHandle"[0m[0m
+[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...[0m[0m
+[0m[0m[0m[3 of 3] Compiling System.Console.Terminal.Size ( src\System\Console\Terminal\Size.hs, .stack-work\dist\5c8418a7\build\System\Console\Terminal\Size.o )
+Installing library in C:\sr\snapshots\8f29239e\lib\x86_64-windows-ghc-8.2.2\terminal-size-0.3.2.1-JBJ8yQTEgTtA6zy0Udgo4n
+Registering library for terminal-size-0.3.2.1..
